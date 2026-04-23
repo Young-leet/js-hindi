@@ -74,13 +74,46 @@ const myf = function(){
 }
 
 
-console.log(typeof bignum)
-console.log(typeof scoreNull)
-console.log(typeof id)
-console.log(typeof anotherId)
+// console.log(typeof bignum)
+// console.log(typeof scoreNull)
+// console.log(typeof id)
+// console.log(typeof anotherId)
 
 
 
 
+//*************************MEMORY************************************ */
 
 
+//***********************stack (primitive)****************************** */
+
+let myutubename = 'ksmrWorld'
+
+let anothername =  myutubename
+
+anothername = 'jinnyadmirer'
+
+
+
+console.log(myutubename)
+
+
+console.log(anothername)
+
+
+let user = {
+    email : 'user@gmail.com' ,
+    upi : 'user@sbi'
+}
+
+
+
+let user1 = user 
+
+
+console.log(user)
+
+user1.email = 'user1@gamil.com'
+
+
+console.log(user)
