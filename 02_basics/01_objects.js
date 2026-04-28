@@ -139,5 +139,41 @@ const obj3 = {
 // console.log(Object.entries(tinderuser));
 
 
-console.log(tinderuser.hasOwnProperty('islogged'));
+// console.log(tinderuser.hasOwnProperty('islogged'));
+
+/** what is de-structuring */
+
+const course = {
+   coursename : 'js in hindi' ,
+   price : '999' ,
+   courseinstructor : 'hitesh' 
+}
+
+// we always use dot to access : course.courseinstructor
+
+// this new way to access object field is de-structring
+// {FEILD-NAME , VARIABLE-NAME } = OBJECT-NAME
+
+const {courseinstructor : ins } = course
+console.log(ins);
+
+/*** what is API :  application proggraming interface */
+
+
+
+
+// {
+//     name : "jinny",
+//     work : "streamer",
+//     followers : "1 million"
+// }
+
+
+[
+    {} ,
+    {}
+]
+
+
+
 
