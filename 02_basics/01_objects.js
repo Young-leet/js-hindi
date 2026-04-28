@@ -168,6 +168,11 @@ console.log(ins);
 //     followers : "1 million"
 // }
 
+/*** full form of JSON
+ *  json : JAVA SCRIPT OBJECT NOTATION
+ * 
+ */
+
 
 [
     {} ,
