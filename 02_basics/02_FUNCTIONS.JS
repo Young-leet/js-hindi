@@ -80,6 +80,8 @@ const user = {
     price : 199
 }
 
+// we can pass ny object in this function
+
 function handleobj(anyobj){
     console.log(`username is ${anyobj.username} and price is ${anyobj.price}`);
     
