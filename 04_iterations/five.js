@@ -209,3 +209,19 @@ const collection = [
 
 // const sno = collection.filter( (n) => (n.sno > 5 && n.sno < 10 )  )
 // console.log(sno);
+
+
+// const sno = collection.filter( (data) => { 
+//     return data.sno > 14  && data.sno < 19
+// })
+
+// console.log(sno);
+
+
+
+
+
+
+
+
+
