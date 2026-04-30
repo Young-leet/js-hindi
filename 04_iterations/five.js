@@ -200,5 +200,12 @@ const collection = [
 // console.log(obccount);
 
 
-const natfollow = collection.filter((data) => data.follow == 'nat')
-console.log(natfollow);
+// const natfollow = collection.filter((data) => data.follow == 'nat')
+// console.log(natfollow);
+
+// const jinnyfollow = collection.filter( (data) => { return data.follow == 'jinny'} )
+// console.log(jinnyfollow);
+
+
+// const sno = collection.filter( (n) => (n.sno > 5 && n.sno < 10 )  )
+// console.log(sno);
