@@ -1,1 +1,51 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>|lecture one |</title>
+</head>
+<body style=" background-color : #212121 ; color : #fff ">
+    <div class="parent">
+      <!-- this is a comment -->
+            <div class="day">Monday</div>
+            <div class="day">Tuesday</div>
+            <div class="day">Wednesday</div>
+            <div class="day">Thursday</div>
+            <div class="day">Friday</div>
+            <div class="day">Saturday</div>
+            <div class="day">Sunday</div>
+
+    </div>
+
+</body>
+
+<script>
+
+
+      const weeklist =  document.querySelector('.parent')
+      // html collection
+      // console.log(weeklist.children[1])
+
+      // for(let i = 0 ; i < weeklist.children.length ; i++){
+      //   let day = weeklist.children[i].innerHTML
+      //   console.log(day);
+        
+      // }
+
+      weeklist.children[0].style.color = 'orange'
+
+      // console.log(weeklist.firstElementChild);
+      // console.log(weeklist.lastElementChild);
+  
+      
+       const dayone = document.querySelector('.day')
+      // console.log(dayone);
+    //  console.log(dayone.parentElement)
+
+    console.log("Nodes :", weeklist.childNodes)
+
+      
+
+</script>
+
+</html>

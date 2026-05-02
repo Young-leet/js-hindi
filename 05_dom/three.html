@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = " background-color : #212121;color : #fff">
+
+    <ul class="language">
+    <li>javascript</li>
+    </ul>
+
+
+</body>
+
+<script>
+
+                        function addnewdiv(dname , divId ){
+                            const newdiv = document.createElement(dname)
+                            newdiv.id = divId
+                           newdiv.style.display = 'block'
+                            newdiv.style.width = '100%'
+                            newdiv.style.color = 'green'
+                            newdiv.style.backgroundColor = 'white'
+                            newdiv.style.padding = '16px'
+                            newdiv.style.borderRadius = '10px'
+                            newdiv.innerText = ' '
+                            document.body.appendChild(newdiv)
+
+                       }
+
+                        function addText( divId , yourtext ){
+                         const targetdiv = document.getElementById(divId)
+                         targetdiv.innerText = yourtext
+                        }
+
+
+                        addnewdiv('divone' , 'first')
+                       addText('first','this my functionally created div block')
+
+
+                        addnewdiv('divtwo' , 'second')
+                       addText('second','HACKERMAN   yyjPoint    Stare   yyjTasty   peepoClap   peepoPhoto')
+
+                        addnewdiv('divthree' , 'third')
+                       addText('third','WOWERS BigDinkDonk DinkDonk HackerMan')
+
+
+
+
+
+
+</script>
+</html>
