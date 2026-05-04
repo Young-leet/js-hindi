@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body>
+    <h2>events images</h2>
+
+    <div>
+
+    <ul id="images">
+
+
+        <li>
+        <img width = "200px" id="snoopy5" src="https://pngimg.com/uploads/snoopy/snoopy_PNG83.png" alt="png">
+        </li>
+
+        <li>
+        <img width = "200px" id="snoopy6" src="https://pngimg.com/uploads/snoopy/snoopy_PNG87.png" alt="png">
+        </li>
+        
+        <li>
+        <img width = "200px" id="snoopy7" src="https://pngimg.com/uploads/snoopy/snoopy_PNG84.png" alt="png">
+        </li>
+        <li>
+        <img width = "200px" id="snoopy8" src="https://pngimg.com/uploads/snoopy/snoopy_PNG81.png" alt="png">
+        </li>
+        
+        <li>
+        <img width = "200px" id="snoopy9" src="https://pngimg.com/uploads/snoopy/snoopy_PNG89.png" alt="png">
+        </li>
+
+        <li>
+        <img width = "200px" id="snoopy10" src="https://pngimg.com/uploads/snoopy/snoopy_PNG79.png"alt="png">
+        </li>
+
+            <li style= "color : orangered;" href= "https://google.com" id="google">google link</li>
+     
+    </ul>
+
+
+
+
+    </div>
+</body>
+
+
+<script>
+// timestamp , type , target , preventdefault , sourceElement , clientPosition , 
+// altkey , ctrlkey , shiftkey , keyCode
+
+
+
+// attachEvent()
+// jQuery-on
+
+// sn5.onclick=()=>{
+//     alert('this is Snoopy 5 image you just clicked on');
+// }
+
+
+// // event propagation vs event bubbling
+
+// document.getElementById('images').addEventListener('click',
+//     function(e){
+//         console.log('clicked ul')
+//     }
+// , false )
+
+
+// document.getElementById('snoopy8').addEventListener('click',
+//     function(e){
+//         console.log('snoopy 8 clicked')
+//         e.stopPropagation()
+//     }
+// , false)
+
+
+
+// document.getElementById('google').addEventListener('click',
+//     function(e){
+//         e.preventDefault()
+//         e.stopPropagation()
+//         console.log('google link clicked')
+     
+//     }
+// , false)
+
+
+
+
+document.querySelector('#images').addEventListener('click' , function(e){
+    console.log(e.target.tagName)
+    if(e.target.tagName === 'IMG'){
+                            console.log(e.target.id)
+                        let removeit = e.target.parentNode
+                            removeit.remove()
+      }
+})
+
+
+</script>
+
+
+</html>
