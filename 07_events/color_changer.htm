@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color changer</title>
+</head>
+<body>
+    <h1>the color of this page will change every second :</h1>
+    <h2>press start to 'START' <button id="start">start</button></h2>
+    <h2>press stop to 'STOP' <button id="stop">stop</button></h2>
+
+</body>
+<script>
+    let controller = null
+  //  bodyBG = document.querySelector('body').style.backgroundColor
+    startbtn = document.querySelector('#start')
+    stopbtn = document.querySelector('#stop')
+    
+    function changeTheDamnColor(numcolor){
+        switch(numcolor){
+            case '1' : document.querySelector('body').style.backgroundColor = 'midnightblue'
+                       break;
+            
+            case '2' : document.querySelector('body').style.backgroundColor = 'lavender'
+                       break;
+                       
+            case '3' : document.querySelector('body').style.backgroundColor = 'steelblue'
+                       break;
+                       
+            case '4' : document.querySelector('body').style.backgroundColor = 'powderblue'
+                       break;
+                       
+            case '5' : document.querySelector('body').style.backgroundColor = 'lemonchiffon'
+                       break;
+                       
+            case '6' : document.querySelector('body').style.backgroundColor = 'chocolate'
+                       break;
+                       
+            case '7' : document.querySelector('body').style.backgroundColor = 'azure'
+                       break;
+                       
+            case '8' : document.querySelector('body').style.backgroundColor = 'moccasin'
+                       break;
+                       
+            case '9' : document.querySelector('body').style.backgroundColor = 'teal'
+                       break;  
+            case '0' : document.querySelector('body').style.backgroundColor = 'indianred'
+                       break;           
+        }
+
+    } 
+
+    startbtn.addEventListener('click' , ()=>{
+        if(controller == null){
+            controller = setInterval(()=>{
+                   let numcolor = Math.floor(Math.random()*10).toString()
+                   changeTheDamnColor(numcolor)
+            } ,1000)
+        }
+    })
+
+    stopbtn.addEventListener('click' , ()=>{
+        clearInterval(controller)
+        controller = null
+    })
+</script>
+</html>

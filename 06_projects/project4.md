@@ -5,7 +5,7 @@
 ``` javascript
 
 
-const randomNum = Math.floor(Math.random() * 100 + 1);
+let randomNum = Math.floor(Math.random() * 100 + 1);
 
 const submit = document.querySelector('#subt');
 const userInput = document.querySelector('#guessField');
@@ -93,6 +93,7 @@ function newGame() {
     lowhi.innerHTML = '';
     userInput.removeAttribute('disabled');
     startOver.removeChild(p);
+     randomNum = Math.floor(Math.random() * 100 + 1);
     playGame = true;
   });
 }

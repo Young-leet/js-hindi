@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+
+<script>
+
+const Wmsg = function(){
+     console.log('W')
+}
+
+let intVal = null
+
+const startbtn = document.querySelector('#start')
+startbtn.addEventListener('click',()=>{
+
+ if(intVal == null){
+ intVal = setInterval(Wmsg , 1000)  
+ }
+
+})
+
+const stopbtn = document.querySelector('#stop')
+
+stopbtn.addEventListener('click' , ()=>{
+
+   clearInterval(intVal)
+    intVal = null
+})
+
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Snoopy kingdom</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+
+    const saySnoopy = function(){
+        console.log('snooopy the random character')
+    }
+
+    const changeHead = function(){
+    document.querySelector('h1').innerHTML = 'best js series'
+    }
+
+    const changeMe = setTimeout(changeHead,2000)
+
+ //   clearTimeout(changeMe)
+
+
+document.querySelector('#stop').addEventListener('click' , ()=>{
+      clearTimeout(changeMe)
+      console.log('stopped')
+})
+</script>
+
+
+
+</html>
